@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Head from "../components/head";
+import Image from "next/image";
 import { PageWrapper } from "../styles/components";
 import { GetStaticProps } from "next";
 
@@ -15,7 +16,18 @@ export default function Home({ tokens }: { tokens: any }) {
   return (
     <IndexWrapper>
       <Head />
-      <h1>{process.env.NEXT_PUBLIC_APP_TITLE}</h1>
+      <div style={{
+            margin: "auto",
+            textAlign: "center",
+        }}>
+                <Image 
+        src={"/bayc-logo.png"}
+        width={460} 
+        height={120} 
+        alt="BAYC"
+      />
+      <h3>{process.env.NEXT_PUBLIC_APP_TITLE}: {process.env.NEXT_PUBLIC_DEFAULT_DESCRIPTION}</h3>
+      </div>
       <AuctionsList tokens={tokens} />
     </IndexWrapper>
   );

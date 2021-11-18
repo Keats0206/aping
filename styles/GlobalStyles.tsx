@@ -10,6 +10,7 @@ export default function GlobalStyles() {
           /* COLORS */
           --black: #000;
           --white: #fff;
+          --yellow: #bfc500;
           --bg-color: #f6f8fa;
           --overlay: rgba(0, 0, 0, 0.85);
           --overlay-light: rgba(0, 0, 0, 0.35);
@@ -61,9 +62,11 @@ export default function GlobalStyles() {
         /* LAYOUT */
         body * {
           font-family: var(--font-a)!important;
+          
         }
 
         main {
+          background: var(--black);
           width: 100%;
           overflow-x: hidden;
           position: relative;
@@ -72,6 +75,7 @@ export default function GlobalStyles() {
 
         header,
         footer {
+          background: var(--black);
           font-size: var(--text-02);
           width: 100%;
           display: flex;
@@ -80,7 +84,7 @@ export default function GlobalStyles() {
           padding: 0 var(--space-md);
           a {
             text-decoration: none;
-            color: var(--black);
+            color: var(--white);
             &.active {
               text-decoration: underline;
             }
@@ -93,6 +97,7 @@ export default function GlobalStyles() {
         /* TYPOGRPAHY */
         h1,h2,h3,h4,h5,h6 {
           font-weight: 500;
+          color: white;
         }
         h1 {
           font-size: var(--text-05);
@@ -127,6 +132,7 @@ export default function GlobalStyles() {
            - WALLET MODAL
         */
         .zora-wallet-modalContent {
+          background: black;
           h3 {
             font-size: var(--text-03)!important;
             padding: 0 0 15px;

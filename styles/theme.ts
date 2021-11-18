@@ -3,16 +3,13 @@ import * as mixins from './mixins'
 
 export const mediaConfigurationStyles = {
   theme: {
-    /*
     lineSpacing: 20,
     linkColor: 'var(--black)',
-    borderStyle: '1px solid var(--black)',
-    defaultBorderRadius: 0,
+    borderStyle: '2px solid var(--yellow)',
+    defaultBorderRadius: 5,
     maximumPricingDecimals: 2,
-    */
   },
   styles: {
-    /*
     fullMediaWrapper: () => css`
       margin: 0;
       position: relative;
@@ -47,19 +44,20 @@ export const mediaConfigurationStyles = {
       grid-gap: var(--space-md);
     `,
     fullCreatorOwnerSection: () => css`
+      color: white; 
       padding: 0;
       display: grid;
       grid-auto-flow: column;
       grid-template-rows: auto auto;
       padding: var(--base-unit);
-      border: 1px solid var(--black);
+      border: 2px solid var(--yellow);
       * {
         text-align: center;
       }
     `,
     fullOwnerAddress: () => css`
       padding-top: var(--space-sm);
-      font-size: var(--text-01);
+      font-size: var(--text-02);
     `,
     fullDescription: () => css`
       margin: var(--space-sm) 0;
@@ -71,15 +69,18 @@ export const mediaConfigurationStyles = {
       padding: var(--base-unit) 0;
     `,
     fullLabel: () => css`
-      color: var(--black);
-      font-family: var(--font-b)!important;
+      color: var(--white);
+      opacity: 0.3;
+      font-family: var(--font-)!important;
       text-transform: uppercase;
-      font-size: var(--text-03);
+      font-size: var(--text-02);
     `,
     infoContainer: () => css`
       padding: var(--space-sm);
-      border: 1px solid var(--black);
+      border: 2px solid var(--yellow);
       margin: 0 auto var(--space-sm);
+      width: 100%;
+      color: var(--white);
     `,
     fullInfoProofAuthenticityContainer: () => css`
       padding: var(--space-sm) 0 0;
@@ -94,6 +95,8 @@ export const mediaConfigurationStyles = {
       color: var(--black);
       font-size: var(--text-01);
       padding-top: 5px;
+      color: var(--white);
+      opacity: 0.3;
     `,
     fullPageHistoryItemMeta: () => css`
       padding-top: 10px;
@@ -107,26 +110,29 @@ export const mediaConfigurationStyles = {
     `,
     fullPageHistoryItem: () => css`
       margin: 0;
-      padding: 0 0 5px;
+      padding: 0 0 10px;
+      padding-top: 10px;
+      color: var(--white);
       margin-bottom: var(--space-sm);
-      font-size: var(--text-01);
-      border-bottom: 1px dotted var(--black);
+      border-bottom: 1px dotted var(--white);
       &:last-of-type {
         border-bottom: 0;
       }
       > div {
         width: 100%;
         display: flex;
-        flex-direction: column;
         padding-bottom: 1px;
-        font-size: var(--text-04);
+        font-size: var(--text-02);
         line-height: 1.2;
         * {
           margin: 0;
           text-align: center;
         }
+        span {
+          margin-right: 3px;
+        }
         ${mixins.media.tablet`
-          justify-content: space-between;
+          padding: 5px;
           flex-direction: row;
         `}
         ${mixins.media.laptop`
@@ -149,7 +155,6 @@ export const mediaConfigurationStyles = {
     fullPageHistoryItemDescription: () => css`
       font-size: var(--text-01);
     `,
-    */
     cardMediaWrapper: () => css`
       width: 100%;
       position: relative;

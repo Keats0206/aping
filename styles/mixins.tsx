@@ -71,20 +71,20 @@ export const buttonInit = css`
 `
 
 export const buttonStyle = css`
+  ${absoluteCentered};
   ${buttonInit};
   border: var(--border-black);
-  color: var(--white);
-  background-color: var(--black);
-  margin: 0 auto;
+  color: var(--black);
+  background-color: var(--yellow);
+  margin: 10 auto;
   position: relative;
   display: block;
   padding: var(--base-unit) var(--space-md);
-  font-size: var(--text-01);
-  border-radius: 50rem;
+  font-size: var(--text-02);
+  border-radius: 4px;
   text-align: center;
   ${media.hover`
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--white);
   `}
 `
 

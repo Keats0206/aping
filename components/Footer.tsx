@@ -1,4 +1,5 @@
 import { css } from '@emotion/react'
+import { NavLink } from './NavLink'
 
 export const Footer = () => {
   return (
@@ -9,7 +10,9 @@ export const Footer = () => {
         text-decoration: none;
       }
     `}>
-      <a target="_blank" href="https://zora.co" className="zora-branding">☼☽</a>
+      <NavLink passHref href="/about">
+        <a>About</a>
+      </NavLink>
       <a target="_blank" href="https://docs.zora.co">Powered by Zora</a>
     </footer>
   )
