@@ -1,15 +1,41 @@
-import { css } from '@emotion/react'
-import * as mixins from './mixins'
+import { css } from "@emotion/react";
+import * as mixins from "./mixins";
 
 export const mediaConfigurationStyles = {
   theme: {
     lineSpacing: 20,
-    linkColor: 'var(--black)',
-    borderStyle: '2px solid var(--yellow)',
+    linkColor: "var(--black)",
+    borderStyle: "2px solid var(--yellow)",
     defaultBorderRadius: 5,
     maximumPricingDecimals: 2,
   },
   styles: {
+    // cardOuter: () => css`
+    //   background: #333333;
+    //   color: white;
+    //   overflow: hidden;
+    //   border-radius: 5px;
+    //   border: 2px solid var(--yellow);
+    //   margin: 15px;
+    //   width: 330px;
+    //   line-height: 20px;
+    //   font-family: Inter, Helvetica;
+    //   font-weight: 400;
+    //   -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    //   transition: transform 0.1s ease-in-out;
+    //   position: relative;
+    // `,
+    // cardAuctionPricing: () => css`
+    //   display: grid;
+    //   grid-auto-flow: column;
+    //   grid-template-rows: auto auto;
+    //   grid-auto-column: 1fr;
+    //   padding: 10px 15px;
+    //   border-top: 2px
+    //   solid var(--yellow);
+    //   background: #161616;
+    // }
+    // `,
     fullMediaWrapper: () => css`
       margin: 0;
       position: relative;
@@ -44,7 +70,7 @@ export const mediaConfigurationStyles = {
       grid-gap: var(--space-md);
     `,
     fullCreatorOwnerSection: () => css`
-      color: white; 
+      color: white;
       padding: 0;
       display: grid;
       grid-auto-flow: column;
@@ -71,7 +97,7 @@ export const mediaConfigurationStyles = {
     fullLabel: () => css`
       color: var(--white);
       opacity: 0.3;
-      font-family: var(--font-)!important;
+      font-family: var(--font-) !important;
       text-transform: uppercase;
       font-size: var(--text-02);
     `,
@@ -109,7 +135,6 @@ export const mediaConfigurationStyles = {
       font-size: var(--text-02);
     `,
     fullPageHistoryItem: () => css`
-      margin: 0;
       padding: 0 0 10px;
       padding-top: 10px;
       color: var(--white);
@@ -165,6 +190,6 @@ export const mediaConfigurationStyles = {
         ${mixins.absoluteFullCentered};
         object-fit: cover;
       }
-    `
-  }
-}
+    `,
+  },
+};

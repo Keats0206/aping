@@ -71,7 +71,6 @@ export const buttonInit = css`
 `
 
 export const buttonStyle = css`
-  ${absoluteCentered};
   ${buttonInit};
   border: var(--border-black);
   color: var(--black);
