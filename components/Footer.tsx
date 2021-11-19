@@ -10,9 +10,10 @@ export const Footer = () => {
         text-decoration: none;
       }
     `}>
-      <NavLink passHref href="/about">
+      {/* <NavLink passHref href="/about">
         <a>About</a>
-      </NavLink>
+      </NavLink> */}
+      <a></a>
       <a target="_blank" href="https://docs.zora.co">Powered by Zora</a>
     </footer>
   )
