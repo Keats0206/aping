@@ -65,12 +65,18 @@ const ConnectWallet = () => {
   const { buttonAction, actionText, connectedInfo } = useWalletButton();
 
   return (
-    <div>
-      <h1>{`${
+    <div style={{
+      margin: "auto",
+      width: "500px",
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "center"
+    }}>
+      <h2>{`${
         connectedInfo === undefined
           ? "To List your NFT Connect your wallet!"
           : connectedInfo
-      }`}</h1>
+      }`}</h2>
       <button className="button" onClick={() => buttonAction()}>
         {actionText}
       </button>
@@ -96,7 +102,7 @@ const RenderOwnedList = ({ account }: { account: string }) => {
   if (data.tokens.length === 0) {
     return (
       <div className="owned-list-no-tokens">
-        <h2>We couldn’t find any NFTs you own 😢</h2>
+        <h3>We couldn’t find any NFTs you own 😢</h3>
         <p>Make sure you’ve connected the correct wallet</p>
       </div>
     );

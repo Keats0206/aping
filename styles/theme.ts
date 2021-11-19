@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import { injectGlobal } from '@emotion/css'
 import * as mixins from "./mixins";
 
 export const mediaConfigurationStyles = {

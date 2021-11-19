@@ -19,6 +19,7 @@ export default function CreateAuctionHouseApp({
   return (
     <>
       <GlobalStyles />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,900&family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
       <Web3ConfigProvider
         networkId={parseInt(process.env.NEXT_PUBLIC_NETWORK_ID as string, 10)}
         rpcUrl={process.env.NEXT_PUBLIC_RPC_URL as string || undefined}
